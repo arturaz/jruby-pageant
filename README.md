@@ -24,6 +24,12 @@ jsch (<http://www.jcraft.com/jsch/>) and JNA (<https://github.com/twall/jna>).
         # This is Java byte[] containing the key comment.
         comment = identity.get_comment
         puts "  comment: #{String.from_java_bytes(comment)}"
+
+        # Signing data is easy too!
+        data = "My data"
+        # This returns byte[]
+        signed = agent_proxy.sign(blob, data.to_java_bytes)
+        puts "  sign: #{data} -> #{String.from_java_bytes(signed)}"
       end
     else
       puts "Pageant is not running!"
