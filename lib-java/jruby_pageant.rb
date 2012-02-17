@@ -4,7 +4,6 @@ require 'java'
 dir = File.dirname(__FILE__) + '/../ext'
 require "#{dir}/jna.jar"
 require "#{dir}/platform.jar"
-require "#{dir}/jsch-0.1.46.jar"
 require "#{dir}/jsch-agent-proxy-0.0.2.jar"
 require "#{dir}/jsch-agent-proxy-pageant-0.0.2.jar"
 

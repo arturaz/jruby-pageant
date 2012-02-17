@@ -1,7 +1,7 @@
 # encoding: utf-8
 @spec = Gem::Specification.new do |s|
   s.name = "jruby-pageant"
-  s.version = "1.0.1"
+  s.version = "1.0.2"
   s.summary = "jruby-pageant allows Pageant access on JRuby + Windows"
   s.description = "This is a convenience gem packaging required JNA/JSCH jars."
   s.authors = ["Artūras Šlajus"]
