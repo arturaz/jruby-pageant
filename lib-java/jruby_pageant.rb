@@ -4,8 +4,8 @@ require 'java'
 dir = File.dirname(__FILE__) + '/../ext'
 require "#{dir}/jna.jar"
 require "#{dir}/platform.jar"
-require "#{dir}/jsch-agent-proxy-0.0.2.jar"
-require "#{dir}/jsch-agent-proxy-pageant-0.0.2.jar"
+require "#{dir}/jsch-agent-proxy-0.0.3.jar"
+require "#{dir}/jsch-agent-proxy-pageant-0.0.3.jar"
 
 module JRubyPageant
   java_import com.jcraft.jsch.agentproxy.AgentProxy
